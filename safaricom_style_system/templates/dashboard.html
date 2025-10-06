@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - Safaricom-style System</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Company Dashboard</h1>
+      <p>Modern system with AI Fraud Detection</p>
+    </header>
+    <section class="cards">
+      <div class="card">
+        <h2>Total Customers</h2>
+        <p>{{ stats.total_customers }}</p>
+      </div>
+      <div class="card">
+        <h2>Total Transactions</h2>
+        <p>{{ stats.total_transactions }}</p>
+      </div>
+      <div class="card">
+        <h2>Flagged Fraud</h2>
+        <p>{{ stats.flagged_frauds }}</p>
+      </div>
+    </section>
+    <section>
+      <h3>Quick Actions</h3>
+      <ul>
+        <li><a href="/login">Login</a></li>
+        <li>API: <code>/api/payments/charge</code></li>
+        <li>API: <code>/api/fraud/check</code></li>
+      </ul>
+    </section>
+    <footer>Built with ❤️ — Demo only</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+jinja2
+aiofiles
+sqlalchemy
+databases
+pydantic
+python-multipart
+itsdangerous
+joblib
+scikit-learn
